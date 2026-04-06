@@ -136,7 +136,7 @@ img { max-width: 100%; display: block; }
 .hero {
   position: relative;
   min-height: 100vh;
-  background: url('hero-bg.jpg') center center / cover no-repeat;
+  background: url('hero-bg.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -669,7 +669,7 @@ footer {
 .page-hero {
   position: relative;
   min-height: 42vh;
-  background: url('hero-bg.jpg') center 40% / cover no-repeat;
+  background: url('hero-bg.png') center 40% / cover no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 0 2rem 4rem;
