@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials | Gerry Fisher Auditing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Gerry Fisher Auditing" class="nav-logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Auditing</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="testimonials.html" class="active">Testimonials</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <h1 class="section-title">What Clients Say</h1>
+      <p class="section-sub">Trusted by businesses, nonprofits, and organizations who rely on precision and integrity.</p>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&#8220;</div>
+          <p>Gerry brought a level of thoroughness and professionalism we hadn't seen before. His audit uncovered gaps in our internal controls that we were able to address before they became serious issues.</p>
+          <div class="testimonial-author">
+            <strong>— Executive Director</strong>
+            <span>Nonprofit Organization</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&#8220;</div>
+          <p>Working with Gerry gave our board the confidence it needed. His reports are clear, precise, and actionable. We knew exactly where we stood financially.</p>
+          <div class="testimonial-author">
+            <strong>— CFO</strong>
+            <span>Mid-Sized Business</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&#8220;</div>
+          <p>Gerry's forensic audit identified discrepancies we had been missing for years. His expertise in fraud detection is unmatched. We are grateful for his diligence and integrity.</p>
+          <div class="testimonial-author">
+            <strong>— Board Chair</strong>
+            <span>Government Agency</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE CONSULTATION FORM -->
+  <section id="consultation" class="section consultation-section">
+    <div class="container">
+      <h2 class="section-title">Free Consultation</h2>
+      <p class="section-sub">Tell us about your organization and auditing needs. We'll follow up promptly to discuss how we can help.</p>
+
+      <form class="consultation-form" onsubmit="handleConsultation(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-name">Full Name <span class="req">*</span></label>
+            <input type="text" id="c-name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="c-org">Organization <span class="req">*</span></label>
+            <input type="text" id="c-org" placeholder="Organization name" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-phone">Phone <span class="req">*</span></label>
+            <input type="tel" id="c-phone" placeholder="(555) 000-0000" required />
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email <span class="req">*</span></label>
+            <input type="email" id="c-email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-needs">Current Needs <span class="req">*</span></label>
+            <input type="text" id="c-needs" placeholder="e.g., Financial statement audit, internal audit..." required />
+          </div>
+          <div class="form-group">
+            <label for="c-goal">Project Goal <span class="req">*</span></label>
+            <input type="text" id="c-goal" placeholder="e.g., Investor readiness, regulatory compliance..." required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="c-description">Description of Project <span class="req">*</span></label>
+          <textarea id="c-description" rows="5" placeholder="Please describe your project, scope, and any relevant background..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="c-deadline">Deadline Date</label>
+          <input type="date" id="c-deadline" />
+        </div>
+
+        <button type="submit" class="btn">Submit Consultation Request</button>
+        <p class="form-success" id="consult-success">Thank you! We will be in touch shortly to schedule your consultation.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Gerry Fisher Auditing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
