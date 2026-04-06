@@ -3,102 +3,310 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gerry Fisher Auditing</title>
+
+  <!-- SEO -->
+  <title>Gerry Fisher Auditing | Independent Auditing & Assurance Services</title>
+  <meta name="description" content="Gerry Fisher Auditing delivers trusted financial statement audits, internal audits, forensic auditing, and compliance services. 20+ years of experience. Precision You Can Trust." />
+  <meta name="keywords" content="auditing firm, financial audit, internal audit, forensic auditing, SOX compliance, nonprofit audit, independent auditor, Texas CPA, Gerry Fisher" />
+  <meta name="author" content="Gerry Fisher Auditing" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gerry Fisher Auditing | Precision You Can Trust" />
+  <meta property="og:description" content="Independent auditing and assurance services grounded in 20+ years of experience. Financial integrity you can count on." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Gerry Fisher Auditing",
+    "description": "Independent auditing, assurance, and advisory services with 20+ years of experience.",
+    "slogan": "Precision You Can Trust",
+    "serviceType": "Auditing & Assurance"
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAV -->
-  <header>
+  <header id="site-header">
     <nav class="navbar">
       <a href="index.html" class="logo-link">
-        <img src="logo.png" alt="Gerry Fisher Auditing" class="nav-logo" />
+        <img src="logo.png" alt="Gerry Fisher Auditing Logo" class="nav-logo" />
       </a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Auditing</a></li>
-        <li><a href="bio.html">Bio</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="bio.html">About</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="testimonials.html#consultation" class="nav-cta">Free Consultation</a></li>
       </ul>
       <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" aria-label="Hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <img src="logo.png" alt="Gerry Fisher Auditing Logo" class="hero-logo" />
-      <p class="hero-tagline">"Precision You Can Trust"</p>
-      <a href="testimonials.html#consultation" class="btn">Free Consultation</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section about-intro">
-    <div class="container">
-      <p class="about-lead">
-        Gerry Fisher Auditing is a client-focused auditing and assurance firm dedicated to delivering accurate, transparent, and insightful financial evaluations. The firm's core mission is to strengthen trust between organizations and their stakeholders by ensuring financial integrity, regulatory compliance, and operational accountability.
-      </p>
-    </div>
-  </section>
-
-  <!-- VISION & MISSION -->
-  <section class="section vm-section">
-    <div class="container vm-grid">
-      <div class="vm-box">
-        <h2 class="vm-title">Vision</h2>
-        <p>To be a trusted partner for businesses seeking clarity, confidence, and strategic insight through high-quality auditing services.</p>
-      </div>
-      <div class="vm-divider"></div>
-      <div class="vm-box">
-        <h2 class="vm-title">Mission</h2>
-        <p class="mission-tagline">"Precision You Can Trust"</p>
-        <p>To deliver reliable, detail-driven auditing solutions grounded in over 20 years of accounting and auditing experience. We are committed to providing trust, precision, and verification in every engagement, ensuring our clients have the clarity and confidence they need to make informed financial decisions. Through integrity, expertise, and a steadfast dedication to accuracy, we uphold the highest standards in meeting all auditing needs.</p>
+      <p class="hero-eyebrow">Independent Auditing &amp; Assurance</p>
+      <h1>Financial Integrity<br /><span class="hero-accent">You Can Count On</span></h1>
+      <p class="hero-sub">Delivering accurate, transparent, and insightful financial evaluations for businesses, nonprofits, and government entities — grounded in over 20 years of expertise.</p>
+      <div class="hero-ctas">
+        <a href="testimonials.html#consultation" class="btn btn-primary">Book Free Consultation</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
       </div>
     </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
   </section>
 
-  <!-- KEY SERVICES + TARGET MARKET (with Photo 3 bottom right) -->
-  <section class="section services-section">
+  <!-- STATS BAR -->
+  <section class="stats-bar" aria-label="Key statistics">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-num">20<span class="stat-plus">+</span></span>
+        <span class="stat-label">Years of Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">6</span>
+        <span class="stat-label">Core Service Areas</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Sectors Served</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">100<span class="stat-plus">%</span></span>
+        <span class="stat-label">Commitment to Accuracy</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PILLARS -->
+  <section class="pillars section" aria-label="Core values">
     <div class="container">
-      <div class="services-market-grid">
-
-        <!-- Left column: Services + Target Market -->
-        <div class="services-market-left">
-          <div class="services-block">
-            <h2 class="section-title">Key Services</h2>
-            <ul class="styled-list">
-              <li>Financial statement audits</li>
-              <li>Internal audits and risk assessments</li>
-              <li>Compliance and regulatory audits</li>
-              <li>Forensic auditing and fraud detection</li>
-              <li>Advisory services for process improvement</li>
-            </ul>
+      <p class="section-eyebrow">Why Gerry Fisher Auditing</p>
+      <h2 class="section-title centered">Built on Three Unbreakable Principles</h2>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4L6 12v10c0 10.5 7.7 20.3 18 22.7C34.3 42.3 42 32.5 42 22V12L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M16 24l5 5 11-11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-
-          <div class="market-block">
-            <h2 class="section-title">Target Market</h2>
-            <ul class="styled-list">
-              <li>Small to mid-sized businesses</li>
-              <li>Startups seeking investor readiness</li>
-              <li>Nonprofit organizations</li>
-              <li>Corporations requiring independent audits</li>
-            </ul>
+          <h3>Trust</h3>
+          <p>Every engagement is built on transparency and accountability. Our clients rely on us to deliver findings they can act on with confidence.</p>
+        </div>
+        <div class="pillar-card pillar-featured">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
           </div>
+          <h3>Precision</h3>
+          <p>We don't miss details. Our rigorous, methodical approach ensures every figure, every risk, and every discrepancy is identified and documented.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="32" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 20h16M16 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Verification</h3>
+          <p>We go beyond the surface. Independent, objective verification gives your stakeholders the assurance they need to make sound decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services section" aria-label="Services">
+    <div class="container">
+      <p class="section-eyebrow">What We Do</p>
+      <h2 class="section-title">Comprehensive Audit &amp; Assurance Services</h2>
+      <p class="section-sub">From financial statement audits to forensic investigations, we bring the expertise your organization needs.</p>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="6" width="32" height="38" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 18h16M16 26h16M16 34h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Financial Statement Audits</h3>
+          <p>Independent examination of financial records to provide stakeholders with confidence in accuracy and GAAP compliance.</p>
         </div>
 
-        <!-- Right column: Photo 3 anchored bottom -->
-        <div class="photo3-wrap">
-          <img src="photo3.jpg" alt="Gerry Fisher speaking" class="photo3" />
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="14" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M32 32l8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Internal Audits &amp; Risk Assessment</h3>
+          <p>Systematic evaluation of internal controls, governance, and risk management to strengthen operational resilience.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4L6 12v10c0 10.5 7.7 20.3 18 22.7C34.3 42.3 42 32.5 42 22V12L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Compliance &amp; Regulatory Audits</h3>
+          <p>Ensuring adherence to applicable laws, regulations, and industry standards — including SOX compliance reviews.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 36L20 24l8 8L40 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="8" cy="36" r="2.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Forensic Auditing &amp; Fraud Detection</h3>
+          <p>Investigative auditing to uncover financial irregularities, misappropriation of assets, and fraudulent activity.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="28" width="8" height="14" rx="1" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="20" y="18" width="8" height="24" rx="1" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="34" y="8" width="8" height="34" rx="1" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3>Advisory &amp; Process Improvement</h3>
+          <p>Strategic recommendations to enhance efficiency, reduce risk exposure, and build stronger financial operations.</p>
+        </div>
+
+        <div class="service-card service-card-cta">
+          <h3>Not Sure Where to Start?</h3>
+          <p>We'll assess your needs and recommend the right audit approach — at no cost to you.</p>
+          <a href="testimonials.html#consultation" class="btn btn-primary">Get Free Consultation</a>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- DUAL IMAGE + MISSION SECTION -->
+  <section class="mission-section section" aria-label="Mission">
+    <div class="container mission-grid">
+      <div class="mission-image-wrap">
+        <img src="photo4final.jpg" alt="Gerry Fisher presenting audit findings" class="mission-img" />
+        <div class="mission-badge">
+          <span class="badge-num">20+</span>
+          <span class="badge-txt">Years of<br/>Excellence</span>
+        </div>
+      </div>
+      <div class="mission-content">
+        <p class="section-eyebrow">Our Purpose</p>
+        <h2 class="section-title">We Exist to Strengthen Financial Integrity</h2>
+
+        <div class="vm-block">
+          <h3 class="vm-label">Vision</h3>
+          <p>To be the trusted partner for organizations seeking clarity, confidence, and strategic insight through high-quality, independent auditing services.</p>
+        </div>
+
+        <div class="vm-block">
+          <h3 class="vm-label">Mission</h3>
+          <p class="mission-quote">"Precision You Can Trust"</p>
+          <p>To deliver reliable, detail-driven auditing solutions that give clients the clarity and confidence they need — through integrity, expertise, and a steadfast dedication to accuracy.</p>
+        </div>
+
+        <a href="bio.html" class="btn btn-outline-gold">Meet Gerry Fisher &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE SERVE -->
+  <section class="market-section section" aria-label="Who we serve">
+    <div class="container">
+      <p class="section-eyebrow">Who We Serve</p>
+      <h2 class="section-title centered">Trusted Across Industries</h2>
+      <p class="section-sub centered">Whether you're a startup or an established institution, we have the experience to meet your audit needs.</p>
+      <div class="market-grid">
+        <div class="market-card">
+          <div class="market-icon">&#127970;</div>
+          <h3>Small &amp; Mid-Sized Businesses</h3>
+          <p>Audit and advisory services scaled to your size and budget, with enterprise-level rigor.</p>
+        </div>
+        <div class="market-card">
+          <div class="market-icon">&#128640;</div>
+          <h3>Startups</h3>
+          <p>Investor-ready financial statements and internal controls to fuel your next stage of growth.</p>
+        </div>
+        <div class="market-card">
+          <div class="market-icon">&#129309;</div>
+          <h3>Nonprofit Organizations</h3>
+          <p>Specialized audit services that satisfy board requirements, grant obligations, and donor confidence.</p>
+        </div>
+        <div class="market-card">
+          <div class="market-icon">&#127963;</div>
+          <h3>Corporations</h3>
+          <p>Independent audit engagements that satisfy regulatory requirements and protect stakeholder interests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip" aria-label="Call to action">
+    <div class="container cta-strip-inner">
+      <div>
+        <h2>Ready to Strengthen Your Financial Integrity?</h2>
+        <p>Schedule a free consultation and let's discuss what a tailored audit engagement looks like for your organization.</p>
+      </div>
+      <a href="testimonials.html#consultation" class="btn btn-primary btn-large">Start Your Free Consultation</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Gerry Fisher Auditing. All rights reserved.</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Gerry Fisher Auditing" class="footer-logo" />
+        <p>Precision You Can Trust</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">About Gerry</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="testimonials.html#consultation">Free Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li>Financial Statement Audits</li>
+          <li>Internal Audits &amp; Risk</li>
+          <li>Compliance Audits</li>
+          <li>Forensic Auditing</li>
+          <li>Advisory Services</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Gerry Fisher Auditing. All rights reserved. | Precision You Can Trust</p>
     </div>
   </footer>
 
