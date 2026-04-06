@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerry Fisher Auditing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Gerry Fisher <span>Auditing</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Trusted Auditing &amp;<br />Financial Assurance</h1>
+      <p>Independent, rigorous, and reliable auditing services for businesses, nonprofits, and government entities.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">We provide a comprehensive range of audit and assurance services tailored to your organization's needs.</p>
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-icon">&#128196;</div>
+          <h3>External Auditing</h3>
+          <p>Independent examination of financial statements to provide stakeholders with confidence in their accuracy and compliance.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">&#128269;</div>
+          <h3>Internal Auditing</h3>
+          <p>Evaluation of internal controls, risk management processes, and governance to strengthen operational efficiency.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">&#128200;</div>
+          <h3>Tax Compliance</h3>
+          <p>Preparation and review of tax returns, ensuring full regulatory compliance and minimizing exposure.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">&#128176;</div>
+          <h3>Financial Advisory</h3>
+          <p>Strategic financial consulting to support sound decision-making, growth planning, and organizational health.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2 class="section-title">About Gerry Fisher</h2>
+        <p>Gerry Fisher Auditing has built a reputation for integrity, precision, and client-focused service. With decades of experience across multiple industries, Gerry Fisher brings a thorough and professional approach to every engagement.</p>
+        <p>Whether working with small businesses, nonprofit organizations, or public entities, the firm is committed to delivering clear, actionable insights you can rely on.</p>
+        <ul class="about-list">
+          <li>&#10003; Certified Public Accountant (CPA)</li>
+          <li>&#10003; Member, American Institute of CPAs</li>
+          <li>&#10003; Peer-reviewed audit practice</li>
+          <li>&#10003; 20+ years of professional experience</li>
+        </ul>
+      </div>
+      <div class="about-visual">
+        <div class="about-badge">
+          <span class="badge-number">20+</span>
+          <span class="badge-label">Years of Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Ready to get started or have questions? Reach out and we'll respond promptly.</p>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">&#128205;</span>
+            <div>
+              <strong>Address</strong>
+              <p>123 Main Street, Suite 100<br />City, State 00000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128222;</span>
+            <div>
+              <strong>Phone</strong>
+              <p>(555) 000-0000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#9993;</span>
+            <div>
+              <strong>Email</strong>
+              <p>info@gerryfisherauditing.com</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="form-success" id="form-success">Thank you! We'll be in touch soon.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Gerry Fisher Auditing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
