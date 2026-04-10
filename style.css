@@ -988,6 +988,112 @@ footer {
   border: 1px solid rgba(74,222,128,0.2);
 }
 
+/* ── Photo Gallery ── */
+.photo-gallery { background: var(--black-soft); }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.gallery-item { overflow: hidden; border-radius: var(--radius); }
+.gallery-item-tall { grid-row: 1 / 3; }
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  min-height: 260px;
+}
+
+.gallery-item:hover img { transform: scale(1.04); }
+
+/* ── FAQ Page ── */
+.faq-section { background: var(--black); }
+
+.faq-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-group {
+  margin-bottom: 3rem;
+}
+
+.faq-group-title {
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.faq-item {
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  font-size: 1.05rem;
+  color: var(--white);
+  transition: color 0.2s;
+}
+
+.faq-question:hover { color: var(--gold); }
+.faq-question[aria-expanded="true"] { color: var(--gold); }
+
+.faq-icon {
+  font-size: 1.4rem;
+  color: var(--gold);
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+
+.faq-answer {
+  display: none;
+  padding-bottom: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  color: var(--silver);
+  line-height: 1.8;
+  font-size: 0.97rem;
+}
+
+.faq-answer.open { display: block; }
+
+.faq-answer p { margin-bottom: 0.85rem; }
+.faq-answer p:last-child { margin-bottom: 0; }
+
+.faq-answer ul {
+  margin: 0.5rem 0 0.85rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.faq-answer ul li { color: var(--silver); }
+.faq-answer strong { color: var(--silver-light); }
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
