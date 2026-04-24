@@ -58,11 +58,12 @@ img { max-width: 100%; display: block; }
 
 /* ── Hero Logo ── */
 .hero-logo {
-  width: 120px;
+  width: 340px;
+  max-width: 80vw;
   height: auto;
   display: block;
-  margin: 0 auto 1.5rem;
-  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5));
+  margin: 0 auto 2rem;
+  filter: drop-shadow(0 6px 24px rgba(0,0,0,0.6));
 }
 
 .nav-links {
