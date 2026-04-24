@@ -53,8 +53,30 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
 }
 
-.logo-link { display: flex; align-items: center; }
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
 .nav-logo { height: 54px; width: auto; object-fit: contain; }
+.nav-brand-text {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--white);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+.nav-brand-text span {
+  display: block;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 0.1rem;
+}
 
 /* ── Hero Logo ── */
 .hero-logo-wrap {
